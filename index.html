@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mercurio Beauty Clinic</title>
+
+  <!-- Seu CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+  <div class="container fade-in">
+
+    <img
+      src="https://i.ibb.co/svqpkv12/Imagem-do-Whats-App-de-2025-04-13-s-15-50-55-55aa0c11.jpg"
+      alt="Logo"
+      class="logo"
+    >
+
+    <h1>Angelica Hipolito</h1>
+
+    <p class="subtitle">
+      Clínica especializada em beleza.<br>
+      Escolha seu serviço:
+    </p>
+
+    <!-- Botão principal -->
+    <a
+      class="btn"
+      href="https://wa.me/5544998104219?text=Olá, gostaria de consultar horários e valores"
+      target="_blank"
+    >
+      Consultar horários e valores
+    </a>
+
+    <div class="accordion">
+
+      <button class="accordion-btn">Sobrancelhas</button>
+      <div class="accordion-content">
+        <p onclick="abrirWhats('Olá, gostaria de agendar design personalizado')">Design personalizado</p>
+        <p onclick="abrirWhats('Olá, gostaria de agendar design com henna')">Design com henna</p>
+        <p onclick="abrirWhats('Olá, gostaria de agendar design com coloração')">
+          Design com coloração (30 dias a mais)
+        </p>
+        <p onclick="abrirWhats('Olá, gostaria de agendar Brow Lamination')">Brow Lamination</p>
+      </div>
+
+      <button class="accordion-btn">Cílios</button>
+      <div class="accordion-content">
+        <p onclick="abrirWhats('Olá, gostaria de agendar extensão de cílios')">Extensão de cílios</p>
+        <p onclick="abrirWhats('Olá, gostaria de agendar Lash Lifting')">Lash Lifting</p>
+      </div>
+
+      <button class="accordion-btn">Cabelos</button>
+      <div class="accordion-content">
+        <p onclick="abrirWhats('Olá, gostaria de agendar cauterização')">Cauterização</p>
+        <p onclick="abrirWhats('Olá, gostaria de agendar manutenção de pontas')">Manutenção de pontas</p>
+        <p onclick="abrirWhats('Olá, gostaria de agendar escova')">Escova</p>
+      </div>
+
+      <button class="accordion-btn">Cursos Presencial e Online</button>
+      <div class="accordion-content">
+        <p onclick="abrirWhats('Olá, quero informações sobre o curso de designer de sobrancelhas iniciante')">
+          Designer de sobrancelhas iniciante
+        </p>
+        <p onclick="abrirWhats('Olá, quero informações sobre o curso de designer de sobrancelhas avançado')">
+          Designer de sobrancelhas avançado
+        </p>
+        <p onclick="abrirWhats('Olá, quero informações sobre estágio em design de sobrancelhas')">
+          Estágio em design de sobrancelhas
+        </p>
+      </div>
+
+      <button class="accordion-btn">Consultoria Online</button>
+      <div class="accordion-content">
+        <p onclick="abrirWhats('Olá, quero informações sobre a consultoria online Desbloqueando sua voz')">
+          Consultoria online “Desbloqueando sua voz”
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Instagram centralizado -->
+    <div class="social">
+      <a
+        href="https://www.instagram.com/bryno.z.ferrari/"
+        target="_blank"
+        class="instagram"
+        aria-label="Instagram"
+      >
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
