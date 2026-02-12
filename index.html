@@ -26,13 +26,14 @@
       Studio especializado em realçar a beleza natural
     </p>
 
-    <a
-      class="btn"
-      href="https://wa.me/5544998104219?text=Olá, gostaria de consultar horários e valores"
-      target="_blank"
-    >
-      Consultar horários e valores
-    </a>
+   <a
+  class="btn"
+  href="https://wa.me/554499601672?text=Olá, gostaria de consultar horários e valores"
+  target="_blank"
+>
+  Consultar horários e valores
+</a>
+
 
     <!-- Accordion -->
     <div class="accordion">
@@ -125,25 +126,26 @@
 
   </div>
 
-  <!-- Script -->
-  <script>
-    // Accordion
-    const buttons = document.querySelectorAll(".accordion-btn");
+<script>
+  const numeroWhats = "554499601672"; // número oficial
 
-    buttons.forEach(button => {
-      button.addEventListener("click", () => {
-        const content = button.nextElementSibling;
-        content.classList.toggle("active");
-      });
+  // Accordion
+  const buttons = document.querySelectorAll(".accordion-btn");
+
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      const content = button.nextElementSibling;
+      content.classList.toggle("active");
     });
+  });
 
-    // WhatsApp
-    function abrirWhats(mensagem) {
-      const numero = "5544998104219";
-      const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
-      window.open(url, "_blank");
-    }
-  </script>
+  // WhatsApp
+  function abrirWhats(mensagem) {
+    const url = `https://wa.me/${numeroWhats}?text=${encodeURIComponent(mensagem)}`;
+    window.open(url, "_blank");
+  }
+</script>
+
 
 </body>
 </html>
