@@ -6,11 +6,11 @@
 body {
   margin: 0;
   min-height: 100vh;
-  background: linear-gradient(135deg, #f7b2b6 0%, #fdf5f7 100%); /* degradê suavizado para consistência */
+  background: linear-gradient(135deg, #f7b2b6 0%, #fdf5f7 100%); /* degradê consistente */
   display: flex;
   justify-content: center;
   padding: 30px 10px;
-  -webkit-text-size-adjust: 100%; /* evita ajustes automáticos de cor/tamanho no mobile */
+  -webkit-text-size-adjust: 100%; /* evita ajustes automáticos no mobile */
 }
 
 /* Fade-in */
@@ -38,7 +38,8 @@ body {
   width: 200px;
   height: 200px;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 50%; /* foto redonda */
+  margin: 0 auto;
 }
 
 h1 {
@@ -138,22 +139,22 @@ h1 {
 /* ============================= */
 /* Sobre Mim */
 .about-section {
-  text-align: center; /* centraliza o conteúdo */
+  text-align: center;
   padding: 10px 0;
 }
 
 .about-content {
   display: flex;
   flex-direction: column;
-  align-items: center; /* centraliza horizontalmente */
+  align-items: center;
   gap: 15px;
 }
 
 .about-photo {
-  width: 120px;           /* largura do círculo */
-  height: 120px;          /* altura fixa igual à largura para círculo perfeito */
-  object-fit: cover;      /* mantém proporção e preenche círculo */
-  border-radius: 50%;     /* deixa redondo */
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%; /* garante círculo perfeito */
 }
 
 .about-text {
@@ -173,10 +174,19 @@ h1 {
   margin-top: 10px;
 }
 
-/* Responsividade */
+/* Responsividade para celular */
 @media screen and (max-width: 480px) {
   body {
-    background: linear-gradient(135deg, #f7b2b6 0%, #fdf5f7 100%); /* garante degradê consistente no mobile */
+    background: linear-gradient(135deg, #f7b2b6 0%, #fdf5f7 100%);
+  }
+
+  .container {
+    padding: 25px;
+  }
+
+  .logo {
+    width: 200px;
+    height: 200px;
   }
 
   .about-content {
@@ -187,9 +197,14 @@ h1 {
   .about-text {
     text-align: center;
   }
+
+  .btn,
+  .accordion-btn {
+    font-size: 14px;
+  }
 }
 
-/* Força cores consistentes em dispositivos móveis com modo escuro */
+/* Força cores consistentes no modo escuro do celular */
 @media (prefers-color-scheme: dark) {
   body {
     background: linear-gradient(135deg, #f7b2b6 0%, #fdf5f7 100%);
